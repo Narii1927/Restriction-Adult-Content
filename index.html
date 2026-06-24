@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeScreen AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>SafeScreen AI</h1>
+    <p>Restriction Adult Content On Screen</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Monitoring Status</h2>
+        <p id="status">🟢 Active</p>
+    </div>
+
+    <div class="card">
+        <h2>Screens Checked</h2>
+        <p id="checked">125</p>
+    </div>
+
+    <div class="card">
+        <h2>Blocked Content</h2>
+        <p id="blocked">8</p>
+    </div>
+
+    <button onclick="simulateDetection()">
+        Simulate Adult Content Detection
+    </button>
+
+</div>
+
+<div class="overlay" id="overlay">
+    <div class="warning-box">
+        <h2>⚠ Adult Content Detected</h2>
+        <p>Access has been Restricted</p>
+        <button onclick="closeWarning()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
